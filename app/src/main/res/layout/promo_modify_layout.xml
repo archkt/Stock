@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tvPromo1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:text="Buy"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPromoCount"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/tvPromo1"
+        android:layout_alignLeft="@+id/tvPromo1"
+        android:ems="3"
+        android:hint="count"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPromo1"
+        app:layout_constraintStart_toEndOf="@+id/tvPromo1" />
+
+    <TextView
+        android:id="@+id/tvPromo2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/etPromoCount"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:text="make item "
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etPromoCount"
+        app:layout_constraintStart_toEndOf="@+id/etPromoCount" />
+
+    <EditText
+        android:id="@+id/etPromoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="3"
+        android:hint="$"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPromo2"
+        app:layout_constraintStart_toEndOf="@+id/tvPromo2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:text="or"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPromo2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="24dp"
+        android:text="discount"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPromo2" />
+
+    <EditText
+        android:id="@+id/etPromoDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="3"
+        android:hint="$"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/etPromoPrice" />
+
+    <CheckBox
+        android:id="@+id/checkPromoForCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Apply promotion for all of the same Category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPromoDiscount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

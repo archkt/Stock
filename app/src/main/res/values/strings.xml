@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Stock</string>
+    <string name="btnModify">Modify</string>
+    <string name="goMain">go Main</string>
+    <string name="empty">show only available stock</string>
+    <string-array name="sort_array">
+        <item>Category (Default)</item>
+        <item>Price</item>
+        <item>Stock</item>
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>
